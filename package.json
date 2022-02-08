@@ -5,5 +5,9 @@
   "dependencies": {
     "crc-32": "^1.2.1",
     "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "jest": "^27.4.7"
   }
 }
+
