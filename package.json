@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "type": "module",
   "dependencies": {
+    "collections": "^5.1.13",
     "crc-32": "^1.2.1",
+    "fs": "^0.0.1-security",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
     "jest": "^27.4.7"
   }
 }
-
