@@ -16,6 +16,7 @@ let array = text.toString().split(",")
 // });
 //
 let findWords = ()  => {
+    // Исключить слова которые содержат буквы
     let exception_letters = "ншолстюкир".split('')
     let ex_result = []
     let filtred_result = []
@@ -28,7 +29,7 @@ let findWords = ()  => {
         }
         if (excep) ex_result.push(word)
     }
-
+    // фильтр по бувам на своем/не на своем месте
     for (const word of ex_result) {
         if (word.includes('б') &&
             word.charAt(4) === 'а' &&
