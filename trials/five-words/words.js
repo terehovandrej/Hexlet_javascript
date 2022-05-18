@@ -1,7 +1,7 @@
 import * as fS from "fs";
 
 
-
+// Запись/чтение словаря
 let text = fS.readFileSync("./file.txt");
 let array = text.toString().split(",")
 // for (const word of array) {
