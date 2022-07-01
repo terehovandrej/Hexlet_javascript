@@ -17,7 +17,7 @@ let array = text.toString().split(",")
 //
 let findWords = ()  => {
     // Исключить слова которые содержат буквы
-    let exception_letters = "ншолстюкир".split('')
+    let exception_letters = "армиянк".split('')
     let ex_result = []
     let filtred_result = []
 
@@ -31,13 +31,15 @@ let findWords = ()  => {
     }
     // фильтр по бувам на своем/не на своем месте
     for (const word of ex_result) {
-        if (word.includes('б') &&
-            word.charAt(4) === 'а' &&
-            word.charAt(0) !== 'а' &&
-            word.charAt(1) !== 'а' &&
-            word.charAt(2) !== 'а' &&
-            word.charAt(3) !== 'а' &&
-            word.charAt(0) !== 'б'
+        if (  word.includes('в')
+            &&
+            word.includes('е') &&
+            word.includes('о')
+            // word.includes('д') &&
+            // word.includes('а')
+            // word.charAt(2) === 'л' &&
+            // word.charAt(3) === 'а'
+
 
     ) {
             filtred_result.push(word)
